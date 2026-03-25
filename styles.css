@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+ 
+body{
+    font-family: 'Rubik', sans-serif;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+	padding-bottom: 80px;
+}
+
+header{
+    font-family: 'Rubik', sans-serif;
+    font-size: 48px;
+}
+
+p{
+	padding-left: 25px;
+	padding-right: 25px;
+    display: inline-block;
+    width: 500px;
+    text-align: left;
+}
+
+pre code{
+	border-radius: 12px;
+	display: block;
+	width: 750px;
+	margin-left: auto;
+	margin-right: auto;
+	font-size:14px;
+}
+
+.player{
+    bottom: 0; 
+    position: fixed; 
+    width: 100%;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	height: 75px;
+	background-color: white;
+	box-shadow: 0px -2px rgba(0, 0, 0, 0.5);
+}
+th, td{
+    border: 1px solid black;   
+    width: 150px;
+    height: 50px;
+}
+table {
+    border-color: collapse;
+    margin-left: auto;
+    margin-right:auto;
+}
+.references {
+	font-size: 15px;
+}
+
+.clickable {
+	background-image: url("imgs/speaker_back.png");
+}
+
+.img-center {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: 75%;
+}
+
+.caption {
+	font-size: 12px;
+	text-align: center;
+}
+
+#nav {
+	margin: 0 0 1.3em;
+	padding: 1.3em 0 0 2em;
+}
+
+#controls {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#controls li {
+	float: left;
+	margin-right: .8em;
+	position: relative;
+}
