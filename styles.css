@@ -86,3 +86,8 @@ table {
 	margin-right: .8em;
 	position: relative;
 }
+
+.cn {
+    font-family: "KaiTi", "STKaiti", "Kaiti SC", serif;
+    font-size: 16px;  
+}
