@@ -1,102 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
- 
+
+/* ===== 页面整体 ===== */
 body{
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Rubik', Arial, sans-serif;
     text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-	padding-bottom: 80px;
+    margin: 0;
+    padding-bottom: 80px;
 }
 
-header{
-    font-family: 'Rubik', sans-serif;
-    font-size: 48px;
+/* ⭐ 核心：限制宽度 + 居中 */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
 }
 
-p{
-	padding-left: 25px;
-	padding-right: 25px;
-    display: inline-block;
-    width: 500px;
-    text-align: left;
-}
-
-pre code{
-	border-radius: 12px;
-	display: block;
-	width: 750px;
-	margin-left: auto;
-	margin-right: auto;
-	font-size:14px;
-}
-
-.player{
-    bottom: 0; 
-    position: fixed; 
-    width: 100%;
-	padding-top: 10px;
-	padding-bottom: 5px;
-	height: 75px;
-	background-color: white;
-	box-shadow: 0px -2px rgba(0, 0, 0, 0.5);
-}
-th, td{
-    border: 1px solid black;   
-    width: 150px;
-    height: 50px;
-}
-table {
-    border-color: collapse;
-    margin-left: auto;
-    margin-right:auto;
-}
-.references {
-	font-size: 15px;
-}
-
-.clickable {
-	background-image: url("imgs/speaker_back.png");
-}
-
-.img-center {
-	display: block;
-  	margin-left: auto;
-  	margin-right: auto;
-  	width: 75%;
-}
-
-.caption {
-	font-size: 12px;
-	text-align: center;
-}
-
-#nav {
-	margin: 0 0 1.3em;
-	padding: 1.3em 0 0 2em;
-}
-
-#controls {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#controls li {
-	float: left;
-	margin-right: .8em;
-	position: relative;
-}
-
-.cn {
-    font-family: "KaiTi", "STKaiti", "Kaiti SC", serif;
-    font-size: 16px;  
-}
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 40px;
-}
-
+/* ===== 标题 ===== */
 h1 {
     text-align: center;
 }
@@ -105,32 +23,91 @@ h2 {
     margin-top: 40px;
 }
 
-/* 每一行两个视频 */
-.media-row {
-    display: flex;
-    justify-content: flex-start;
-    gap: 20px;
-    margin-bottom: 30px;
+/* ===== 段落 ===== */
+p{
+    padding-left: 25px;
+    padding-right: 25px;
+    display: inline-block;
+    max-width: 600px;
+    text-align: left;
 }
 
-/* 单个模块 */
+/* ===== 视频布局（核心修改）===== */
+.media-row {
+    display: flex;
+    justify-content: center;   /* ⭐ 居中对齐 */
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;           /* ⭐ 小屏自动换行 */
+}
+
 .media-block {
     text-align: center;
 }
 
-/* 视频统一尺寸 */
+/* ⭐ 控制视频大小，避免撑出屏幕 */
 video {
-    width: 360px;
+    width: 300px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
-/* 音频间距 */
+/* ===== 音频 ===== */
 audio {
     margin-top: 10px;
 }
 
-/* 中文楷体（带fallback） */
+/* ===== 中文字体 ===== */
 .cn {
     font-family: "KaiTi", "STKaiti", "Kaiti SC", serif;
     font-size: 18px;
+}
+
+/* ===== 其他保留样式 ===== */
+pre code{
+    border-radius: 12px;
+    display: block;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size:14px;
+}
+
+.player{
+    bottom: 0; 
+    position: fixed; 
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    height: 75px;
+    background-color: white;
+    box-shadow: 0px -2px rgba(0, 0, 0, 0.5);
+}
+
+th, td{
+    border: 1px solid black;   
+    width: 150px;
+    height: 50px;
+}
+
+table {
+    border-color: collapse;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.references {
+    font-size: 15px;
+}
+
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+}
+
+.caption {
+    font-size: 12px;
+    text-align: center;
 }
