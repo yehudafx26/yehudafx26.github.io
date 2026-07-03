@@ -4,6 +4,37 @@
     <meta charset="utf-8">
     <title>Examples for a PHYSICAL MODEL OF THE CHINESE YEHU FOR SOUND SYNTHESIS</title>
     <link rel="stylesheet" href="styles.css">
+
+    <style>
+        .case-description {
+            margin-bottom: 1.5em;
+        }
+
+        .case-description p {
+            margin: 0.3em 0;
+        }
+
+        .phrase-row {
+            display: flex;
+            gap: 1.5em;
+            align-items: flex-start;
+            margin-bottom: 2em;
+            flex-wrap: wrap;
+        }
+
+        .audio-case {
+            flex: 1;
+            min-width: 260px;
+        }
+
+        .audio-case audio {
+            width: 100%;
+        }
+
+        .audio-case p {
+            margin-bottom: 0.4em;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,9 +52,7 @@
     <!-- Gesture 1 -->
     <div class="media-row">
         <div class="media-block">
-            <p>
-                ges1<br>
-            </p>
+            <p>ges1</p>
             <video controls>
                 <source src="ssynthSamples/gges1.mp4" type="video/mp4">
             </video>
@@ -91,9 +120,7 @@
     <!-- Gesture 5 -->
     <div class="media-row">
         <div class="media-block">
-            <p>
-                ges5
-            </p>
+            <p>ges5</p>
             <video controls>
                 <source src="ssynthSamples/gges5.mp4" type="video/mp4">
             </video>
@@ -111,18 +138,174 @@
     <!-- ================= AUDIO ================= -->
     <h2>Audio Samples</h2>
 
-    <div class="media-block">
-        <p><span class="cn">景春萝</span> (Jing Chun Luo)</p>
-        <audio controls>
-            <source src="ssynthSamples/filjingchunluo.wav" type="audio/wav">
-        </audio>
+    <div class="case-description">
+        <p>
+            <strong>Case 1:</strong> filtered simulated bridge velocity 
+            using the bridge velocity-to-microphone sound-pressure transfer function at mic position 1.
+        </p>
+        <p>
+            <strong>Case 2:</strong> filtered simulated bridge force 
+            using the bridge force-to-microphone sound-pressure transfer function at mic position 1.
+        </p>
+        <p>
+            <strong>Case 3:</strong> filtered simulated bridge force 
+            using the bridge force-to-microphone sound-pressure transfer function at mic position 2.
+        </p>
     </div>
 
-    <div class="media-block">
-        <p><span class="cn">十杯酒</span> (Shi Bei Jiu)</p>
-        <audio controls>
-            <source src="ssynthSamples/filshibeijiu.wav" type="audio/wav">
-        </audio>
+    <!-- Phrase 1 -->
+    <h3>Phrase 1</h3>
+    <div class="phrase-row">
+        <div class="media-block audio-case">
+            <p>Case 1</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase1_u.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 2</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase1_f.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 3</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase1_fp.wav" type="audio/wav">
+            </audio>
+        </div>
+    </div>
+
+
+    <!-- Phrase 2 -->
+    <h3>Phrase 2</h3>
+    <div class="phrase-row">
+        <div class="media-block audio-case">
+            <p>Case 1</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase2_u.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 2</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase2_f.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 3</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase2_fp.wav" type="audio/wav">
+            </audio>
+        </div>
+    </div>
+
+
+    <!-- Phrase 3 -->
+    <h3>Phrase 3</h3>
+    <div class="phrase-row">
+        <div class="media-block audio-case">
+            <p>Case 1</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase3_u.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 2</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase3_f.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 3</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase3_fp.wav" type="audio/wav">
+            </audio>
+        </div>
+    </div>
+
+
+    <!-- Phrase 4 -->
+    <h3>Phrase 4</h3>
+    <div class="phrase-row">
+        <div class="media-block audio-case">
+            <p>Case 1</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase4_u.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 2</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase4_f.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 3</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase4_fp.wav" type="audio/wav">
+            </audio>
+        </div>
+    </div>
+
+
+    <!-- Phrase 5 -->
+    <h3>Phrase 5</h3>
+    <div class="phrase-row">
+        <div class="media-block audio-case">
+            <p>Case 1</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase5_u.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 2</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase5_f.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 3</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase5_fp.wav" type="audio/wav">
+            </audio>
+        </div>
+    </div>
+
+
+    <!-- Phrase 6 -->
+    <h3>Phrase 6</h3>
+    <div class="phrase-row">
+        <div class="media-block audio-case">
+            <p>Case 1</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase6_u.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 2</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase6_f.wav" type="audio/wav">
+            </audio>
+        </div>
+
+        <div class="media-block audio-case">
+            <p>Case 3</p>
+            <audio controls>
+                <source src="ssynthSamples/fil_Phrase6_fp.wav" type="audio/wav">
+            </audio>
+        </div>
     </div>
 
 </body>
