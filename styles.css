@@ -54,6 +54,7 @@ video {
 
 /* ===== 音频 ===== */
 audio {
+    width: 300px;
     margin-top: 10px;
 }
 
